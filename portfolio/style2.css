@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+*{
+    margin: 0;
+    font-family: 'Merriweather', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.bg2 {
+    background-color: #ebecf0;
+    height: 715px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul a {
+    transition: 0.4s;
+}
+
+
+.name {
+    display: flex;
+    flex-direction: column;
+    color: #6d7587;
+    font-size: 2em;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+.bg2 .name span {
+    margin: 15px 0;
+    box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: 5px solid #ebecf0;
+    transition: 0,2s;
+    cursor: pointer;
+    
+}
+
+.bg2 .name span:hover {
+    box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff,
+     inset 9.91px 9.91px 15px #d9dade, inset -9.91px -9.91px 15px #ffffff;
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bar{
+    margin: 34px 0;
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: inset 9.91px 9.91px 10px #d9dade, inset -9.91px -9.91px 10px #ffffff;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+
+.bar .progress {
+    height: 100%;
+    background: linear-gradient(#dde008, #fff348);
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+
+.bar:nth-child(1) .progress {
+    width: 55%;
+}
+
+.bar:nth-child(2) .progress {
+    width: 30%;
+}
+
+.bar:nth-child(3) .progress {
+    width: 70%;
+}
+
+.bar:nth-child(4) .progress {
+    width: 55%;
+}
+
+ul{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+
+}
+
+
+li{
+    color: #6d7587;
+    margin: 25px;
+    height: 70px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 162px;
+    border: 5px solid #ebecf0;
+    box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+    cursor: pointer;
+    transition: 0,2s;
+    position: absolute;right:50px;top: 550px;
+}
+
+
+li:hover{
+    box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff,
+    inset 9.91px 9.91px 15px #d9dade, inset -9.91px -9.91px 15px #ffffff;
+    
+}
+
+i{
+    font-size: 2em;
+
+}
