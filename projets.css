@@ -15,6 +15,7 @@
 
 li{
     color: #6d7587;
+    background-color: #ebecf0;
     margin: 25px;
     height: 70px;
     width: 100px;
@@ -36,7 +37,7 @@ li{
 
 img{
     margin: 15px;
-    width: 200px;
+    width: 250px;
     height :auto;
     transition-duration:0.5s;
 }
